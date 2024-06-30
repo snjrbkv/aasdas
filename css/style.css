@@ -338,6 +338,17 @@ header {
     transform: rotate(90deg);
 }
 /* ANSWER */
+/* footer */
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    h2 {
+  font-size: clamp(22px, 6vw, 52px);
+    }
+}
+/* footer */
 /* MEDIA */
 @media only screen and (max-width: 1000px) {
     
@@ -355,8 +366,19 @@ header {
     justify-content: center;
     align-items: center;
 }
+.about-us__diogram {
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/img/bium-001.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-color: #000;
+}
 }
 @media only screen and (max-width: 600px) {
+    
   .container {
     padding: 5% 4%;
   }
@@ -448,10 +470,34 @@ header {
     .partner-card {
         width: 100% !important;
     }
+    aside {
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .side-bar-nav--list {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .links--item  {
+            width: 100%;
+            margin: 5% 0;
+            text-align: center;
+        }
+        ul {
+            width: 100%;
+        }
+    }
 }
 /* MEDIA */
-/* side-bar */
 
+/* side-bar */
 aside {
     display: none;
     position: absolute;
@@ -501,7 +547,7 @@ body.side-bar
   }
   .second-it {
     width: 100%;
-    transform: rotate(-45deg) translateY(-3px) translateX(2px);
+    transform: rotate(-45deg) translateY(-3px) translateX(1.5px);
   }
 }
 
