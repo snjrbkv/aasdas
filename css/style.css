@@ -41,6 +41,8 @@ body {
 header {
     width: 100%;
     position: fixed;
+    top: 0;
+    z-index: 10;
     background-color: #000000;
 }
 .header-in {
@@ -76,6 +78,9 @@ header {
   font-weight: 500 !important;
   font-size: 15px;
 }
+.burger--item {
+  font-family: sans-serif;
+}
 .burger {
   width: 2.7rem;
   height: 2.7rem;
@@ -90,6 +95,7 @@ header {
   flex-direction: column;
   gap: 10%;
   span {
+    transition: all 0.3s ease;
     display: block;
     width: 90%;
     height: 2px;
@@ -124,6 +130,8 @@ header {
     font-size: 18px;
     font-weight: lighter !important;
     margin-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 /* HERO */
 
@@ -194,7 +202,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    h3 {
+    .card-title {
         width: 100%;
         text-align: left;
         font-size: clamp(42px, 15vw, 102px);  
@@ -252,10 +260,10 @@ header {
         border-radius: 50px;
         margin-bottom: 3%;
     }
-    h3 {
+    .h3 {
         font-size: 16px;
     }
-    h4 {
+    .h4 {
         font-size: 13px;
     }
 }
@@ -305,7 +313,7 @@ header {
         margin-top: 3% !important;
         display: block;
     }
-    h3 {
+    p{
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -397,6 +405,7 @@ header {
     }
     .hero-info {
         font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
     }
   /* HERO ADAPTIVE */
     /* ABOUT-US */
@@ -441,3 +450,59 @@ header {
     }
 }
 /* MEDIA */
+/* side-bar */
+
+aside {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: #121315;
+    top: 0;
+    .aside-container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.links--item  {
+    margin: 5% 0;
+    text-align: right;
+}
+.links--item:last-child {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+.side-bar--link {
+  font-size: clamp(32px, 10vw, 82px);
+
+}
+body.side-bar aside {
+    display: block;
+}
+body.side-bar {
+    overflow: hidden;
+}
+body.side-bar 
+.burger {
+  gap: 10%;
+  transition: all 0.4s ease;
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg) translateY(3px) translateX(3px);
+    
+  }
+  .second-it {
+    width: 100%;
+    transform: rotate(-45deg) translateY(-3px) translateX(2px);
+  }
+}
+
+/* side-bar */
