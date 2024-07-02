@@ -177,7 +177,7 @@ h2 {
 
     margin-bottom: 3%;
 }
-.about-us__diogram {
+/* .about-us__diogram {
     padding: 5% 0;
     width: 100%;
     height: 700px;
@@ -185,12 +185,23 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000;
-}
+} */
+ .diagram-container {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
 .about-us__second-in {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.diagram {
+  width: 100%;
+  margin-bottom: 8%;
 }
 .about-us__btn {
     padding: 15px 30px;
