@@ -4,12 +4,22 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: "oswail";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+@font-face {
   font-family: "dirt-li";
   src: url("../fonts/Dirtyline36Daysoftype2022");
 }
 
 @font-face {
-    font-family: 'Dirtyline36Day';
+  font-family: "impact";
+  src: url("../fonts/impact.ttf");
+}
+
+  @font-face {
+    font-family: "Dirtyline 36Daysoftype 2022";
     src: url('../fonts/Dirtyline36Daysoftype2022-Reg.eot');
     src: url('../fonts/Dirtyline36Daysoftype2022-Reg.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Dirtyline36Daysoftype2022-Reg.woff2') format('woff2'),
@@ -120,10 +130,12 @@ header {
   text-align: center;
   flex-direction: column;
 }
-.hero-title {
+h1 {
   text-transform: uppercase;
   font-size: clamp(32px, 10vw, 82px);
   margin-bottom: 5%;
+  font-weight: 700;
+  font-family: 'impact';
   font-weight: normal;
 }
 .hero-info {
@@ -147,11 +159,14 @@ header {
     display: flex;
     flex-direction: column;
 }
-.about-us__title {
+h2 {
+
   text-transform: uppercase;
-  font-size: 82px;
+  font-size: clamp(28px, 8vw, 78px);
+  margin-bottom: 5%;
   font-weight: normal;
 }
+
 .about-us__info {
     margin: 3% 0;
     width: 100%;
@@ -332,7 +347,7 @@ header {
 
 }
 .active .content {
-    max-height: 100px;
+    max-height: 100vh;
 }
 .active .arrow {
     transform: rotate(90deg);
@@ -422,8 +437,6 @@ footer {
 
     .hero {
         padding-top: 17%;
-    }
-    .hero-title {
     }
     .hero-info {
         font-size: 13px;
